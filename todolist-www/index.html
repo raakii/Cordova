@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./lib/themes/rakis_theme.min.css">
+    <link rel="stylesheet" href="./lib/jquery.mobile.icons-1.4.5.min.css">
+    <link rel="stylesheet" href="./lib/jquery.mobile.structure-1.4.5.min.css">
+    <!-- <link rel="stylesheet" href="./lib/jquery.mobile-1.4.5.min.css"> -->
+    <title>Todo list app</title>
+    <script src="./lib/jquery.min.js"></script>
+    <script src="./lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1>My Tasks</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <fieldset>
+                <label for="taskFieldText">Add a new task</label>
+                <input type="text" name="taskFieldText" id="taskFieldText">
+            </fieldset>
+            <input type="button" value="ADD" onclick="addtask()">
+            <input type="button" value="RESET" onclick="resettasklist()">
+            <div>
+                <div data-role="header" data-theme="b">
+                    <h2  >In Progress</h2>
+                </div>
+                <ul data-inset="true" id="taskList" data-role="listview">
+                </ul>
+                <div data-role="header" data-theme="c">
+                    <h2  >Done</h2>
+                </div>
+                <ul data-inset="true" id="completedTaskList" data-role="listview">
+                </ul>
+            </div>
+        </div>
+        <div id="console"></div>
+        <div data-role="footer" data-position="fixed">
+            <h1>DIC3 ESP DEV MOBILE</h1>
+        </div>
+    </div>
+</body>
+
+</html>

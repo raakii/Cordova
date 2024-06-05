@@ -1,0 +1,43 @@
+input,
+label {
+    width: 99%;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+label,
+h1 {
+    text-align: center;
+}
+
+input {
+    height: 35px;
+    border: 1px solid saddlebrown;
+    border-radius: 10px ;
+}
+
+#button {
+    background-color: saddlebrown;
+    color: white;
+    font-size: large;
+    padding: 5px;
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    justify-self: center;
+    margin-top: 100px;
+    margin-left: 10px;
+}
+
+fieldset{
+   
+    color: saddlebrown;
+    font-size: large;
+    border-radius: 10px ;
+    font-weight: bold;
+    border: none;
+
+}
